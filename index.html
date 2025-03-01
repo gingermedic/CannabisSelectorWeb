@@ -1,0 +1,31 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannabis Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="welcome">
+        <img src="images/logo.png" alt="Wildflowers Logo" class="logo">
+        <h1>Welcome to Wildflowers Dispensary!</h1>
+        <p>Find your perfect strain—click Start to begin!</p>
+        <button onclick="startQuestions()">Start</button>
+    </div>
+    <div class="container" id="question" style="display: none;">
+        <h1 id="question-text"></h1>
+        <div id="options"></div>
+    </div>
+    <div class="container" id="result" style="display: none;">
+        <h1 id="result-title"></h1>
+        <img id="result-image" src="" alt="Strain Image">
+        <p id="result-description"></p>
+        <p id="result-type"></p>
+        <p id="result-uses"></p>
+        <p id="result-terpenes"></p>
+        <button onclick="reset()">Start Over</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
